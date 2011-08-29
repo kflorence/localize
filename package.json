@@ -1,0 +1,19 @@
+{
+  "name": "localize.js",
+  "version": "0.0.1",
+  "description": "Web page localization in JavaScript",
+  "homepage": "https://github.com/kflorence/localize",
+  "main": "./lib/localize",
+  "keywords": ["localize", "localization", "internationalization", "translation"],
+  "author": {
+    "name": "Kyle Florence",
+    "email": "kyle.florence@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/kflorence/localize/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kflorence/localize.git"
+  }
+}
