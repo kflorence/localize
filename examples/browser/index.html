@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>localize.js</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="../../lib/localize.js"></script>
+
+    <!-- initialize the library -->
+    <script type="text/javascript">localize();</script>
+  </head>
+  <body>
+    <h1>localize.js</h1>
+
+    <div id="wrapper">
+      <p><%= hello_world %></p>
+    </div>
+
+    <!-- body has loaded, localize it when ready -->
+    <script type="text/javascript">
+      localize.ready(function() {
+        localize( document.documentElement );
+        document.body.style.visibility = "visible";
+      });
+    </script>
+  </body>
+</html>
