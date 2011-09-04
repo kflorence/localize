@@ -1,27 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <title>localize.js</title>
+    <title><%= title %></title>
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script type="text/javascript" src="../../lib/localize.js"></script>
-
-    <!-- initialize the library -->
-    <script type="text/javascript">localize();</script>
+    <script src="external/require-0.26.0.min.js" data-main="scripts/main"></script>
   </head>
   <body>
-    <h1>localize.js</h1>
+    <h1><%= title %></h1>
 
     <div id="wrapper">
       <p><%= hello_world %></p>
     </div>
-
-    <!-- body has loaded, localize it when ready -->
-    <script type="text/javascript">
-      localize.ready(function() {
-        localize( document.documentElement );
-        document.body.style.visibility = "visible";
-      });
-    </script>
   </body>
 </html>

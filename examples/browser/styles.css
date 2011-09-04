@@ -8,7 +8,7 @@ body {
   font-size: 75%;
   margin: 0;
   padding: 0;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
 h1 {
