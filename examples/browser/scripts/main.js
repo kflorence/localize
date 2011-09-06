@@ -1,14 +1,10 @@
-
 // Load the localize library, which depends on the require library
 require(["require", "../../../lib/localize"], function() {
 
-  // Initialize the localize library, passing in a function to be
-  // executed once all required resources have loaded
+  // When all resources have loaded, and the DOM is ready...
   localize(function() {
 
-    // When the DOM is ready, we can translate
-    require.ready(function() {
-      localize( document.documentElement );
-    });
+    // Localize the root (html) element
+    localize( document.documentElement );
   });
 });
