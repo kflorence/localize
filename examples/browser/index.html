@@ -4,7 +4,19 @@
     <title><%= title %></title>
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="external/require-0.26.0.min.js" data-main="scripts/main"></script>
+    <script src="external/require-0.26.0.min.js"></script>
+    <script>
+      // Load the localize library, which depends on the require library
+      require(["require", "../../lib/localize"], function() {
+console.log( "done" );
+        // When all resources have loaded, and the DOM is ready...
+        localize(function() {
+console.log( "ready" );
+          // Localize the root (html) element
+          localize( document.documentElement );
+        });
+      });
+    </script>
   </head>
   <body>
     <h1><%= title %></h1>
