@@ -1,3 +1,5 @@
+(function() {
+
 // Load the localize library, which depends on the require library
 require(["require", "../../../lib/localize"], function() {
 
@@ -6,5 +8,10 @@ require(["require", "../../../lib/localize"], function() {
 
     // Localize the root (html) element
     localize( document.documentElement );
+
+    // Un-hide body
+    document.body.className = "";
   });
 });
+
+})();
