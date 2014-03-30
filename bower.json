@@ -1,0 +1,23 @@
+{
+  "name": "localize",
+  "version": "1.0.0",
+  "main": [
+    "lib/localize.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "build",
+    "Gruntfile.js"
+  ],
+  "keywords": [
+    "i18n",
+    "internationalisation",
+    "internationalization",
+    "l10n",
+    "localise",
+    "localisation",
+    "localization",
+    "localize"
+  ]
+}
